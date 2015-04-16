@@ -1,7 +1,7 @@
 # Prototype with Middleman and Push to Pivotal Web Services
 
 ## Prototype
-1. `git clone git@github.com:pivotal-plech/pws-middleman.git`
+1. `git clone git@github.com:paulfarino/pws-middleman.git`
 2. `cd pws-middleman`
 3. `bundle`
 4. `middlman server`
