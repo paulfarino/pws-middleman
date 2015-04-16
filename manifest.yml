@@ -1,0 +1,10 @@
+---
+buildpack: https://github.com/cloudfoundry/ruby-buildpack.git
+
+applications:
+- name: your-app-name
+  host: your-host-name
+  command: bundle exec middleman build && bundle exec rackup -p $PORT
+  mem: 1G
+  instances: 1
+  domain: cfapps.io
