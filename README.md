@@ -23,5 +23,5 @@ You’ll need to have an active Pivotal Web Services account for the following. 
 - [Bootstrap](http://getbootstrap.com/)
 
 ----------------
-If you have a question ping [Paul Farino](mailto:paul.farino1@gmail.com)
+If you have a question ping [Paul Farino](mailto:paul.farino1@gmail.com)  
 Based on the work of [Spencer Hurst](https://github.com/spencerhurst)
