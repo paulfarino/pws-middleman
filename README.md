@@ -4,7 +4,7 @@
 1. `git clone git@github.com:paulfarino/pws-middleman.git`
 2. `cd pws-middleman`
 3. `bundle`
-4. `middlman server`
+4. `middleman server`
 
 ## Push to PWS
 You’ll need to have an active Pivotal Web Services account for the following. Update the manifest.yml:
