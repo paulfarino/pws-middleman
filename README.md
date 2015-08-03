@@ -7,11 +7,11 @@
 4. `middleman server`
 
 ## Push to PWS
-You’ll need to have an active Pivotal Web Services account for the following. Update the manifest.yml:
+You’ll need to have an active Pivotal Web Services account for the following. Update the Rakefile:
 
-1. Update `name: prototype-mm` to `name: [your-app-name]`
-2. Update `host: prototype-mm` to `name: [your-host-name]`
-3. cf push
+1. Update `name: your-app-name`
+2. Update `host: your-host-name`
+3. Push to PWS via `rake pws_deploy`
 
 
 ---
