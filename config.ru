@@ -13,7 +13,7 @@ run lambda { |env| }
 
 # # Password Protetct
 # protected_middleman = Rack::Auth::Basic.new(Middleman.server) do |username, password|
-#   [username, password] == ['amy', 'r3dbu11s']
+#   [username, password] == ['myusername', 'mypassword']
 # end
 
 # run protected_middleman
