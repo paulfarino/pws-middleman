@@ -1,8 +1,10 @@
 source 'https://rubygems.org'
-ruby '2.2.3'
 
-gem "middleman", "~>3.3.7"
-gem "rack-contrib"
-gem "bootstrap-sass", "~> 3.3.4"
-gem "sass-rails", ">= 3.2"
-gem "autoprefixer-rails"
+gem 'middleman', '>= 4.0.0'
+gem 'middleman-livereload'
+gem 'middleman-sprockets'
+gem 'bootstrap-sass', '~> 3.3.6'
+gem 'jquery-middleman'
+gem 'sass-rails', '>= 3.2'
+gem 'wdm', '~> 0.1.0', platforms: [:mswin, :mingw]
+gem 'tzinfo-data', platforms: [:mswin, :mingw, :jruby]

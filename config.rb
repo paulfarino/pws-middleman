@@ -1,19 +1,15 @@
-activate :automatic_image_sizes
-activate :directory_indexes
-
-set :css_dir, 'stylesheets'
+page '/*.xml', layout: false
+page '/*.json', layout: false
+page '/*.txt', layout: false
 set :js_dir, 'javascripts'
-set :images_dir, 'images'
-set :build_dir, 'tmp'
+
+activate :sprockets
+
+configure :development do
+  activate :livereload
+end
 
 configure :build do
   activate :minify_css
   activate :minify_javascript
-  activate :asset_hash
 end
-
-# Bootstrap
-require 'bootstrap-sass'
-
-# silence i18n warning
-::I18n.config.enforce_available_locales = false
