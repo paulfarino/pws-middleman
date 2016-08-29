@@ -4,6 +4,7 @@ page '/*.txt', layout: false
 set :js_dir, 'javascripts'
 
 activate :sprockets
+activate :autoprefixer
 
 configure :development do
   activate :livereload

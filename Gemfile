@@ -5,6 +5,7 @@ gem 'middleman-livereload'
 gem 'middleman-sprockets'
 gem 'bootstrap-sass', '~> 3.3.6'
 gem 'jquery-middleman'
+gem 'middleman-autoprefixer'
 gem 'sass-rails', '>= 3.2'
 gem 'scss_lint', require: false
 gem 'wdm', '~> 0.1.0', platforms: [:mswin, :mingw]
