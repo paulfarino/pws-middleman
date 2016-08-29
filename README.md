@@ -13,7 +13,9 @@ You’ll need to have an active Pivotal Web Services account for the following. 
 2. Update `host: your-host-name`
 3. Push to PWS via `rake pws_deploy`
 
-
+## SCSS Linting  
+Run SCSS Litining via `rake`  
+`rake scss_lint`
 ---
 
 ### Other Docs

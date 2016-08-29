@@ -1,3 +1,11 @@
+# SCSS Lint
+require 'scss_lint/rake_task'
+SCSSLint::RakeTask.new do |t|
+  t.files = ['source/stylesheets/', 'source/stylesheets/']
+end
+
+
+# Deploy to PWS
 desc "Build the website from source"
 task :build do
  puts "## Building website"
