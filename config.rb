@@ -5,6 +5,7 @@ set :js_dir, 'javascripts'
 
 activate :sprockets
 activate :autoprefixer
+activate :directory_indexes
 
 configure :development do
   activate :livereload
