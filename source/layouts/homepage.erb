@@ -12,9 +12,12 @@
 <!--[if lt IE 8]>
 <p class="browsehappy"><span>You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.<span></p>
 <![endif]-->
+<% if build? %>
+  <%= partial "javascripts/partials/google-analytics" %>
+<% end %>
 
 </head>
-    
+
     <body class="<%= page_classes %>">
     <%= yield %>
     </body>
