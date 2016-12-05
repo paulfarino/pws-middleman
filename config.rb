@@ -1,11 +1,16 @@
 page '/*.xml', layout: false
 page '/*.json', layout: false
 page '/*.txt', layout: false
-set :js_dir, 'javascripts'
 
-activate :sprockets
+set :css_dir, 'stylesheets'
+set :js_dir, 'javascripts'
+set :images_dir, 'images'
+
+activate :automatic_alt_tags
 activate :autoprefixer
 activate :directory_indexes
+activate :sprockets
+activate :autoprefixer
 
 configure :development do
   activate :livereload
