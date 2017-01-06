@@ -9,17 +9,22 @@
 	<%= stylesheet_link_tag  "normalize", "site" %>
 	<%= javascript_include_tag  "app" %>
 
-<!--[if lt IE 8]>
-<p class="browsehappy"><span>You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.<span></p>
-<![endif]-->
-<% if build? %>
-  <%= partial "javascripts/partials/google-analytics" %>
-<% end %>
+  <% if current_page.data.description %>
+    <meta name="description" content="<%= current_page.data.description %>">
+  <% end %>
+
+  <% if current_page.data.keywords %>
+    <meta name="keywords" content="<%= current_page.data.keywords %>">
+  <% end %>
+
+  <% if build? %>
+    <%= partial "javascripts/partials/google-analytics" %>
+  <% end %>
 
 </head>
 
     <body class="<%= page_classes %>">
-    <%= yield %>
+      <%= yield %>
     </body>
 
 </html>
