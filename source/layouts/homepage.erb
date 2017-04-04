@@ -1,30 +1,31 @@
 <!doctype html>
 <html>
-<head>
-    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <head>
     <meta charset="utf-8">
-    <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title><%= current_page.data.title || "Prototyping" %></title>
+    <%= favicon_tag 'images/favicon.png' %>
+    <%= stylesheet_link_tag "site" %>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <%= javascript_include_tag "site" %>
 
-	<title><%= current_page.data.title || "Prototyping" %></title>
-	<%= stylesheet_link_tag  "normalize", "site" %>
-	<%= javascript_include_tag  "app" %>
+    <% if current_page.data.description %>
+      <meta name="description" content="<%= current_page.data.description %>">
+    <% end %>
 
-  <% if current_page.data.description %>
-    <meta name="description" content="<%= current_page.data.description %>">
-  <% end %>
+    <% if current_page.data.keywords %>
+      <meta name="keywords" content="<%= current_page.data.keywords %>">
+    <% end %>
 
-  <% if current_page.data.keywords %>
-    <meta name="keywords" content="<%= current_page.data.keywords %>">
-  <% end %>
-
-  <% if build? %>
-    <%= partial "javascripts/partials/google-analytics" %>
-  <% end %>
-
-</head>
-
-    <body class="<%= page_classes %>">
+    <% if build? %>
+      <%= partial "/partials/analytics/google" %>
+    <% end %>
+  </head>
+  <body>
+    <%= partial "partials/header" %>
       <%= yield %>
-    </body>
-
+    <%= partial "partials/footer" %>
+  </body>
 </html>
