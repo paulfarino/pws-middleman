@@ -15,5 +15,5 @@ end
 
 desc "Deploy site to PWS"
 task :pws_deploy => :build do
- system("cf push your-app-name -m 64m -p build -b https://github.com/cloudfoundry-incubator/staticfile-buildpack.git")
+ system("cf push your-app-name -m 64m -p build -b https://github.com/cloudfoundry/staticfile-buildpack.git")
 end
