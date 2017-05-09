@@ -1,11 +1,12 @@
 source 'https://rubygems.org'
-ruby '2.4.0'
+ruby '2.4.1'
 
 gem 'middleman', '~> 4.2'
 gem 'middleman-autoprefixer', '~> 2.7'
 gem 'jquery-middleman'
 gem 'bootstrap', '~> 4.0.0.alpha6'
 gem 'middleman-dotenv'
+gem 'dotenv'
 gem 'middleman-sitemap'
 gem 'middleman-sprockets'
 gem 'middleman-deploy', '~> 2.0.0.pre.alpha'

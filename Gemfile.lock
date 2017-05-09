@@ -126,6 +126,7 @@ PLATFORMS
 
 DEPENDENCIES
   bootstrap (~> 4.0.0.alpha6)
+  dotenv
   jquery-middleman
   middleman (~> 4.2)
   middleman-autoprefixer (~> 2.7)
@@ -138,7 +139,7 @@ DEPENDENCIES
   wdm (~> 0.1)
 
 RUBY VERSION
-   ruby 2.4.0p0
+   ruby 2.4.1p111
 
 BUNDLED WITH
-   1.14.5
+   1.14.6
